@@ -6,8 +6,12 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 import PostDetails from './components/PostDetails/PostDetails';
+import { useEffect } from 'react';
 
 const App = () => {
+  useEffect(() => {
+    document.title="MEMORIES"
+  }, [])
   const user = JSON.parse(localStorage.getItem('profile'));
   return (
     <BrowserRouter>
