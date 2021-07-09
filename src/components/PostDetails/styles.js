@@ -27,6 +27,7 @@ export default makeStyles((theme) => ({
       marginLeft: 0,
     },
     flex: '50%',
+    marginTop:'20px',
     // height:'10px',
   },
   recommendedPosts: {
